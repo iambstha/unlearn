@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2{
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: rgb(5, 2, 27);
+}
+p{
+    color: rgb(84, 86, 87);
+    
+}
+.codeblock{
+    border: 1px solid #ebebeb;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #fbfbfb;
+    margin-left: 1rem;
+    width: auto;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+.codeblock code{
+    color: chocolate;
+}
