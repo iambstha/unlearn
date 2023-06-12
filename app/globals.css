@@ -17,7 +17,6 @@ p{
     flex-direction: column;
     flex-wrap: wrap;
     background-color: #fbfbfb;
-    margin-left: 1rem;
     width: auto;
     padding: 5px 8px;
     border-radius: 4px;
@@ -36,6 +35,20 @@ p{
     color: rgb(128, 128, 128);
     font-size: 1.2rem;
     text-align: justify;
+}
+.blog_content ul,ol{
+    color: rgb(128, 128, 128);
+}
+@media (max-width: 720px) {
+    .blog_content ul,ol{
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    .blog_content p{
+        color: #1a1919;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
 }
 .blog_content blockquote{
     font-size: 1.4rem;

@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${jakarta.className} min-h-[100vh]`}  >
+      <body className={`${lato.className} min-h-[100vh]`}  >
         <Header />
         {children}
         <Footer />
