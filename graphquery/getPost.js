@@ -22,7 +22,6 @@ const getPost = async (params) => {
             slug: params.slug,
         }
     );
-    console.log(post)
     return post
 }
 

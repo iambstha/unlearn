@@ -1,6 +1,7 @@
 import Header from '@/components/Header'
 import './globals.css'
 import { Inter, Lato, Alegreya, Plus_Jakarta_Sans  } from 'next/font/google'
+import Footer from '@/components/Footer'
  
 const inter = Inter({ subsets: ['latin'] })
 const lato = Lato({ subsets: ['latin'], weight: ['300'] })
@@ -14,9 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={jakarta.className} >
+      <body className={`${jakarta.className} min-h-[100vh]`}  >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

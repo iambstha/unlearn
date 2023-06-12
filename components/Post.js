@@ -11,7 +11,7 @@ async function Post({ params }) {
                     <h1 className=' text-6xl text-slate-800 font-semibold text-left w-full py-4 ' >{post.title}</h1>
                     <span className='  w-2/3 text-slate-400 text-left text-lg py-2 ' >{post.subtitle}</span>
                     <div className=' py-2 flex justify-start items-start gap-2 ' >{post.tags?.map(tag => (<span className=' flex justify-start border-[1px] rounded-lg text-slate-500 px-2 py-1 border-slate-200 ' >{tag}</span>))}</div>
-                    <span className=' w-2/3 text-slate-400 text-left py-2 text-right ' ><span className="text-slate-700">Author:</span> {post.author.name}</span>
+                    <span className=' w-2/3 text-slate-400 py-2 text-right ' ><span className="text-slate-700">Author:</span> {post.author.name}</span>
                     <div dangerouslySetInnerHTML={{ __html: post.content.html }} className=' leading-loose w-2/3 text-left blog_content '  >
                     </div>
                 </div>

@@ -4,28 +4,28 @@ import Link from 'next/link'
 
 const Nav = () => {
     return (
-        <div className=' border-b-[1px] p-2 border-b-slate-200 '>
-            <div className=' flex flex-col justify-center items-center w-full '>
-                <div className=' flex justify-between w-full items-center ' >
-                    <div className=' w-1/3 h-10 flex justify-start ' >
+        <div className=' border-b-[1px] border-b-slate-200 relative bg-slate-200 h-40 z-10 '>
+            <div className=' flex flex-col justify-center items-center w-full fixed z-20 bg-slate-200 '>
+                <div className=' flex justify-between w-full items-center p-2 ' >
+                    <div className=' w-1/3 flex justify-start ' >
                         <ul className=' flex  text-xs items-center '>
                             <li className=' p-2 text-gray-500 font-semibold ' ><Link href=''>Events</Link></li>
                             <li className=' p-2 text-gray-500 font-semibold ' ><Link href=''>Data/Infographics</Link></li>
                         </ul>
                     </div>
-                    <div className=' w-1/3 h-10 flex justify-center ' >
+                    <div className=' w-1/3 flex justify-center ' >
                         <ul className=' flex  text-xs items-center '>
-                            <li className=' p-2 text-gray-500 ' ><Link className=' hover:underline ' href='/authors'>Authors</Link></li>
-                            <li className=' p-2 text-gray-500 ' ><Link className=' hover:underline ' href='/posts'>All Posts</Link></li>
-                            <li className=' p-2 text-gray-500 ' ><Link className=' hover:underline ' href=''>Sex</Link></li>
-                            <li className=' p-2 text-gray-500 ' ><Link className=' hover:underline ' href=''>Whistleblower</Link></li>
-                            <li className=' p-2 text-gray-500 ' ><Link className=' hover:underline ' href=''>Marriage</Link></li>
+                            <li className=' p-2 text-gray-500 ' ><Link className=' hover:underline ' href=''>JavaScript</Link></li>
+                            <li className=' p-2 text-gray-500 ' ><Link className=' hover:underline ' href=''>ReactJS</Link></li>
+                            <li className=' p-2 text-gray-500 ' ><Link className=' hover:underline ' href=''>NodeJS</Link></li>
+                            <li className=' p-2 text-gray-500 ' ><Link className=' hover:underline ' href=''>VueJS</Link></li>
+                            <li className=' p-2 text-gray-500 ' ><Link className=' hover:underline ' href=''>Database</Link></li>
                         </ul>
                     </div>
-                    <div className=' w-1/3 h-10 flex justify-end ' >
+                    <div className=' w-1/3 flex justify-end ' >
                         <ul className=' flex  text-sm items-center '>
-                            <li><Link className=' ml-2 border-[1px] p-2 border-slate-700 bg-slate-700 font-bold text-white hover:bg-slate-500 hover:border-slate-500 transition-colors ' href='/write'>Write Now</Link></li>
-                            <li><Link className=' ml-2 border-[1px] p-2 border-slate-700 bg-slate-700 font-bold text-white hover:bg-slate-500 hover:border-slate-500 transition-colors ' href='/add-category'>Add Category</Link></li>
+                            <li><Link className=' ml-2 border-[1px] p-2 rounded-md border-slate-700 bg-slate-700 font-bold text-white hover:bg-slate-500 hover:border-slate-500 transition-colors ' href='/sitemap.xml'>Sitemap</Link></li>
+                            {/* <li><Link className=' ml-2 border-[1px] p-2 border-slate-700 bg-slate-700 font-bold text-white hover:bg-slate-500 hover:border-slate-500 transition-colors ' href=''>Add Category</Link></li> */}
                         </ul>
                     </div>
                 </div>
