@@ -17,6 +17,7 @@ const getPosts = async () => {
             biography
           }
           createdAt
+          tags
         }
       }`
   )

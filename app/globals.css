@@ -23,5 +23,47 @@ p{
     border-radius: 4px;
 }
 .codeblock code{
-    color: chocolate;
+    color: rgb(173, 21, 173);
+}
+.blog_content{
+    font-size: 1.2rem;
+}
+.blog_content h2{
+    font-weight: 600;
+    color: rgb(8, 10, 31);
+}
+.blog_content p{
+    color: rgb(128, 128, 128);
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.blog_content blockquote{
+    font-size: 1.4rem;
+    color: #040511;
+    font-style: italic;
+    text-align: justify;
+    position: relative;
+    padding-left: 10px;
+    margin: 5px 0;
+}
+.blog_content blockquote::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #ebebeb;
+}
+.blog_content img{
+    padding: 5px;
+    width: auto;
+    height: auto;
+}
+.blog_content ul li{
+    list-style: decimal;
+}
+.blog_content a{
+    color: blue;
+    font-size: 1rem;
 }

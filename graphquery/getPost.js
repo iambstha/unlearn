@@ -15,6 +15,7 @@ const getPost = async (params) => {
                     name
                 }
                 createdAt
+                tags
             }
         }`,
         {
