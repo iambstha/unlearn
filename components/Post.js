@@ -1,11 +1,7 @@
 import getPost from '@/graphquery/getPost'
-import getPosts from '@/graphquery/getPosts'
 
 async function Post({ params }) {
     const post = await getPost(params)
-    const posts = await getPosts()
-    console.log(posts)
-    console.log(posts.map(p => (p.tags.includes('cloudfactory'))))
     return (
         <>
             {
